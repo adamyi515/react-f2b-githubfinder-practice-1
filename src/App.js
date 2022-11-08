@@ -9,16 +9,21 @@ import Header from './components/header/header.component';
 // Pages
 import HomePage from './pages/home-page/home-page.component';
 
+// Context
+import { GithubProvider } from './context/github.context';
+
 const App = () => {
     return(
-        <BrowserRouter>
-            <Header />
-            <div className='container'>
-                <Routes>
-                    <Route path='/' element={<HomePage />} />
-                </Routes>
-            </div>
-        </BrowserRouter>
+        <GithubProvider>
+            <BrowserRouter>
+                <Header />
+                <div className='container'>
+                    <Routes>
+                        <Route path='/' element={<HomePage />} />
+                    </Routes>
+                </div>
+            </BrowserRouter>
+        </GithubProvider>
     )
 }
 

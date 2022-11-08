@@ -1,0 +1,12 @@
+.github-item {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+
+.github-item__link {
+    text-decoration: none;
+    color: #9a9b9c;
+}
