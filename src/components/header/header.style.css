@@ -6,5 +6,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 0 5%;
 }
 
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item__link {
+    color: #A6ADBA;
+    text-decoration: none;
+}
