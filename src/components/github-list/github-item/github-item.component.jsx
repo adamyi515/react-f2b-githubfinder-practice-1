@@ -14,7 +14,7 @@ const GithubItem = ({ user }) => {
             <img height='60px' src={avatar_url} />
             <div>
                 <h4>{ login }</h4>
-                <Link className='github-item__link'>Visit Profile</Link>
+                <Link to={`/users/${login}`} className='github-item__link'>Visit Profile</Link>
             </div>
         </div>
     )

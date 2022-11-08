@@ -23,3 +23,15 @@ export const searchGithubUsers = async (text) => {
     const data = await response.json();
     return data.items;
 }
+
+// Make API call to get one SPECIFIC USER.
+export const searchGithubUser = async (username) => {
+    const response = await fetch(`${GITHUB_URL}/users/${username}`, {
+        headers: {
+            Authorization: GITHUB_TOKEN
+        }
+    });
+
+    const data = await response.json();
+    return data;
+}
