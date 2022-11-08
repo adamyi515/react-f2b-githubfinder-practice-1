@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2A303C;
+}
+
+
+/**************************************************************************************/
+/*** UTILS/REUSABLE CLASS ***/
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
