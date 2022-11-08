@@ -13,9 +13,11 @@ const App = () => {
     return(
         <BrowserRouter>
             <Header />
-            <Routes>
-                <Route path='/' element={<HomePage />} />
-            </Routes>
+            <div className='container'>
+                <Routes>
+                    <Route path='/' element={<HomePage />} />
+                </Routes>
+            </div>
         </BrowserRouter>
     )
 }
